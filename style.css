@@ -7,6 +7,16 @@ body {
   text-align: center;
 }
 
+div.float-right {
+  height: 550px;
+  text-align: left;
+  font-size: 20px;
+  padding: 100px;
+  background-image: url(svg/megaphone.svg);
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
 ul {
   list-style: none;
   display: flex;
