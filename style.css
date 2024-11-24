@@ -7,14 +7,20 @@ body {
   text-align: center;
 }
 
-div.float-right {
-  height: 550px;
+div.mainpage {
   text-align: left;
+  height: 550px;
   font-size: 20px;
   padding: 100px;
   background-image: url(svg/megaphone.svg);
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: right;
+  background-size: 50% auto;
+}
+.maintext {
+  display: flex;
+  flex-wrap: wrap;
+  width: 531px;
 }
 
 ul {
@@ -28,4 +34,17 @@ ul {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-}/*# sourceMappingURL=style.css.map */
+}
+a {
+  text-decoration: none;
+}
+.button {
+  background-color: rgb(25, 26, 35);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: 1 solid;
+  border-radius: 14px;
+  max-width: 264px;
+  max-height: 68px;
+  padding: 20px 35px;
+}
