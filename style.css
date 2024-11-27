@@ -105,6 +105,12 @@ a {
   width: 730px;
 }
 
+.optimization {
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+  border-radius: 45px;
+}
+
 .proposal {
   background: rgb(243, 243, 243) no-repeat right/auto;
   height: 347px;
