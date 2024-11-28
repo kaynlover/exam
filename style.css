@@ -107,8 +107,26 @@ a {
 
 .optimization {
   background-color: rgb(243, 243, 243);
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: content-box;
   border: 1px solid black;
+  border-bottom: 5px solid black;
   border-radius: 45px;
+}
+.optimization .symbol {
+  justify-self: right;
+}
+.optimization p {
+  display: flex;
+  width: 221px;
+  height: 76px;
+  color: black;
+  background-color: rgb(185, 255, 102);
+  border-radius: 7px;
 }
 
 .proposal {
