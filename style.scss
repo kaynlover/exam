@@ -136,119 +136,125 @@ a {
   p {
     background-color: white;
 
-  }}
+  }
+}
 
-  .email-marketing {
-    @include cardStyles;
-    @include neongray(background-color);
+.email-marketing {
+  @include cardStyles;
+  @include neongray(background-color);
 
-    p {
-      @include neongreen(background-color)
-    }
+  p {
+    @include neongreen(background-color)
+  }
+}
+
+.content {
+  @include neongreen(background-color);
+  @include cardStyles;
+
+  p {
+    background-color: white;
+    background-clip: content-box;
+  }
+}
+
+.tracking {
+  @include cardStyles;
+  @include neonblack(background-color);
+
+  .symbol {
+    color: white;
   }
 
-  .content {
+  p {
     @include neongreen(background-color);
-    @include cardStyles;
-
-    p {
-      background-color: white;
-      background-clip: content-box;
-    }
   }
+}
 
-  .tracking {
-    @include cardStyles;
-    @include neonblack(background-color);
+.serv-head {
+  @include headers;
+}
 
-    .symbol {
-      color: white;
-    }
+.case-head {
+  @include headers;
 
-    p {
-      @include neongreen(background-color);
-    }
-  }
+}
 
-  .serv-head {
-    @include headers;
-  }
+.process-head {
+  @include headers;
+}
 
-  .case-head {
-    @include headers;
+.proposal {
+  background: rgba(243, 243, 243, 1) no-repeat right / auto;
+  height: 347px;
+  margin: 123px auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 45px;
 
-  }
-  .process-head {
-    @include headers;
-  }
 
-  .proposal {
-    background: rgba(243, 243, 243, 1) no-repeat right / auto;
-    height: 347px;
-    margin: 123px auto;
-    padding: 0 60px;
+  .text-container {
+    max-width: 500px;
+    text-align: left;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 45px;
+    flex-wrap: wrap;
+    font-size: 18px;
 
-
-    .text-container {
-      max-width: 500px;
-      text-align: left;
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 18px;
-
-      h3 {
-        font-size: 30px;
-      }
-
+    h3 {
+      font-size: 30px;
     }
 
-    .image-container {
-      max-width: 494px;
-    }
   }
+
+  .image-container {
+    max-width: 494px;
+  }
+}
+
 .case-link {
   display: flex;
   gap: 20px;
   @include neonblack(background-color);
   color: white;
-  border-radius: 45px; 
+  border-radius: 45px;
   font-size: 20px;
 
   div {
     border-right: solid white;
     padding: 65px;
     text-align: left;
-   
-   img {
-    padding-top: 20px;
-    width: 200px;
-    
-    transition: transform 0.3s ease; 
-  
-    &:hover {
-      animation: pulse 1s infinite; 
+
+    img {
+      padding-top: 20px;
+      width: 200px;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        animation: pulse 1s infinite;
+      }
     }
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1); 
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+        padding-left: 5px;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+
     }
-    50% {
-      transform: scale(1.05);
-      padding-left: 5px;
-    }
-    100% {
-      transform: scale(1); 
-    }
-  
-   }
   }
 }
+
 .consultation {
   @include neongreen(background-color);
   border: solid black 1px;
@@ -258,11 +264,13 @@ a {
   padding: 60px;
   box-sizing: border-box;
   font-size: 18px;
+
   h3 {
     border-bottom: solid black;
     font-size: 30px;
     padding-bottom: 30px;
   }
+
   span {
     font-size: 60px;
     font-weight: 500px;
