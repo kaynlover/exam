@@ -1,27 +1,9 @@
-@mixin leftdiv($height, $width, $fontSize) {
-  display: flex;
-  height: $height;
-  flex-wrap: wrap;
-  width: $width;
-  font-size: $fontSize;
-  font-weight: 400;
-}
-
-@mixin neongreen($property: color) {
-  #{$property}: rgba(185, 255, 102, 1);
-}
-
-@mixin neonblack($property: color) {
-  #{$property}: rgba(25, 26, 35, 1);
-}
-
-@mixin neongray ($property: color) {
-  #{$property}: rgba(243, 243, 243, 1);
-}
+@use 'mixins';
 
 body {
   font-family: Space Grotesk;
 }
+
 
 .wrapper {
   margin: 0 auto;
@@ -122,42 +104,29 @@ a {
   justify-content: center;
 
 }
+.optimization {
+  @include cardStyles;
+}
 
+.ppclick {
+
+  @include cardStyles;
+}
+
+.sm-marketing {
+  @include cardStyles;
+}
+
+.email-marketing {
+  @include cardStyles;
+
+}
 .serv-head {
   display: flex;
   gap: 40px;
   margin-top: 250px;
   margin-bottom: 80px;
   width: 730px;
-}
-
-.optimization {
-  @include neongray(background-color);
-  width: 600px;
-  height: 310px;
-  font-size: 30px;
-  padding: 50px;
-  font-weight: 500;
-  box-sizing: content-box;
-  border: 1px solid black;
-  border-bottom: 5px solid black;
-  border-radius: 45px;
-
-
-
-  .symbol {
-    justify-self: right;
-  }
-
-  p {
-    display: flex;
-
-    width: 221px;
-    height: 76px;
-    color: black;
-    @include neongreen(background-color);
-    border-radius: 7px;
-  }
 }
 
 .proposal {
@@ -188,3 +157,4 @@ a {
     max-width: 494px;
   }
 }
+

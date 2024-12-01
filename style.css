@@ -14,6 +14,7 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
+
 header a {
   color: black;
   border: solid transparent;
@@ -21,6 +22,7 @@ header a {
   transition: padding 0.3s ease, border 0.3s ease;
   padding: 10px 10px;
 }
+
 header a:hover {
   border: solid black;
   border-radius: 14px;
@@ -33,6 +35,7 @@ header a:hover {
   height: 550px;
   background: no-repeat right/auto url(svg/megaphone.svg);
 }
+
 .mainpage .maintext {
   display: flex;
   height: 481px;
@@ -63,6 +66,7 @@ ul li img {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
+
 ul li img:hover {
   filter: grayscale(0%);
 }
@@ -77,6 +81,7 @@ ul li img:hover {
   max-height: 68px;
   padding: 20px 35px;
 }
+
 .button:hover {
   background-color: rgb(185, 255, 102);
   color: black;
@@ -105,30 +110,6 @@ a {
   width: 730px;
 }
 
-.optimization {
-  background-color: rgb(243, 243, 243);
-  width: 600px;
-  height: 310px;
-  font-size: 30px;
-  padding: 50px;
-  font-weight: 500;
-  box-sizing: content-box;
-  border: 1px solid black;
-  border-bottom: 5px solid black;
-  border-radius: 45px;
-}
-.optimization .symbol {
-  justify-self: right;
-}
-.optimization p {
-  display: flex;
-  width: 221px;
-  height: 76px;
-  color: black;
-  background-color: rgb(185, 255, 102);
-  border-radius: 7px;
-}
-
 .proposal {
   background: rgb(243, 243, 243) no-repeat right/auto;
   height: 347px;
@@ -139,6 +120,7 @@ a {
   align-items: center;
   border-radius: 45px;
 }
+
 .proposal .text-container {
   max-width: 500px;
   text-align: left;
@@ -146,9 +128,211 @@ a {
   flex-wrap: wrap;
   font-size: 18px;
 }
+
 .proposal .text-container h3 {
   font-size: 30px;
 }
+
 .proposal .image-container {
   max-width: 494px;
+}
+
+.optimization {
+  background-color: rgb(243, 243, 243);
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+}
+
+.optimization .picture {
+  grid-area: pic;
+}
+
+.optimization .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.optimization .symbol img {
+  transition: transform 0.3s ease;
+}
+
+.optimization .symbol img:hover {
+  transform: rotate(25deg);
+}
+
+.optimization .block-text {
+  grid-area: text;
+}
+
+.optimization p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.optimization p {
+  background-color: rgb(185, 255, 102);
+}
+
+.ppclick {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(185, 255, 102);
+}
+
+.ppclick .picture {
+  grid-area: pic;
+}
+
+.ppclick .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ppclick .symbol img {
+  transition: transform 0.3s ease;
+}
+
+.ppclick .symbol img:hover {
+  transform: rotate(25deg);
+}
+
+.ppclick .block-text {
+  grid-area: text;
+}
+
+.ppclick p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.sm-marketing {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(25, 26, 35);
+}
+
+.sm-marketing .picture {
+  grid-area: pic;
+}
+
+.sm-marketing .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sm-marketing .symbol img {
+  transition: transform 0.3s ease;
+}
+
+.sm-marketing .symbol img:hover {
+  transform: rotate(25deg);
+}
+
+.sm-marketing .block-text {
+  grid-area: text;
+}
+
+.sm-marketing p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.email-marketing {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(243, 243, 243);
+}
+
+.email-marketing .picture {
+  grid-area: pic;
+}
+
+.email-marketing .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-marketing .symbol img {
+  transition: transform 0.3s ease;
+}
+
+.email-marketing .symbol img:hover {
+  transform: rotate(25deg);
+}
+
+.email-marketing .block-text {
+  grid-area: text;
+}
+
+.email-marketing p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+
+.email-marketing p {
+  background-color: rgb(185, 255, 102);
 }/*# sourceMappingURL=style.css.map */
