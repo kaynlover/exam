@@ -1,88 +1,5 @@
+@import'mixins.scss';
 
-@mixin leftdiv($height, $width, $fontSize) {
-  display: flex;
-  height: $height;
-  flex-wrap: wrap;
-  width: $width;
-  font-size: $fontSize;
-  font-weight: 400;
-}
-
-@mixin neongreen($property: color) {
-  #{$property}: rgba(185, 255, 102, 1);
-}
-
-@mixin neonblack($property: color) {
-  #{$property}: rgba(25, 26, 35, 1);
-}
-
-@mixin neongray ($property: color) {
-  #{$property}: rgba(243, 243, 243, 1);
-}
-
-@mixin neonwhite ($property: color) {
-  #{$property}: rgba(255, 255, 255, 1);
-}
-
-
-@mixin headers {
-    display: flex;
-    gap: 40px;
-    margin-top: 250px;
-    margin-bottom: 80px;
-    width: 730px;
-    text-align: left;
-}
-@mixin cardStyles {
-
-  display: grid;
-  grid-template-areas:
-    "text pic"
-    "symbol pic";
-  width: 600px;
-  height: 310px;
-  font-size: 30px;
-  padding: 50px;
-  font-weight: 500;
-  box-sizing: border-box;
-  border: 1px solid black;
-  border-bottom: 5px solid black;
-  border-radius: 45px;
-  color: black;
-
-  .picture {
-    grid-area: pic;
-  }
-
-  .symbol {
-    grid-area: symbol;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    img {
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: rotate(25deg);
-      }
-    }
-  }
-
-  .block-text {
-    grid-area: text;
-  }
-
-  p {
-    width: 221px;
-    height: 76px;
-    color: black;
-    border-radius: 7px;
-    margin: 0;
-  
-  }
-}
 
 body {
   font-family: Space Grotesk;
@@ -213,78 +130,79 @@ a {
 
   .symbol {
     color: white;
-  
+
   }
 
   p {
     background-color: white;
-    
-}
 
-.email-marketing {
-  @include cardStyles;
-  @include neongray(background-color);
+  }}
 
-  p {
-    @include neongreen(background-color)
-  }
-}
+  .email-marketing {
+    @include cardStyles;
+    @include neongray(background-color);
 
-.content {
-  @include neongreen(background-color);
-  @include cardStyles;
-
-  p {
-    background-color: white;
-  }
-}
-
-.tracking {
-  @include cardStyles;
-  @include neonblack(background-color);
-
-  .symbol {
-    color: white;
+    p {
+      @include neongreen(background-color)
+    }
   }
 
-  p {
+  .content {
     @include neongreen(background-color);
+    @include cardStyles;
+
+    p {
+      background-color: white;
+    }
   }
-}
 
-.serv-head {
- @include headers;
-}
-.case-head {
-  @include headers;
-  
-}
+  .tracking {
+    @include cardStyles;
+    @include neonblack(background-color);
 
-.proposal {
-  background: rgba(243, 243, 243, 1) no-repeat right / auto;
-  height: 347px;
-  margin: 123px auto;
-  padding: 0 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 45px;
-
-
-  .text-container {
-    max-width: 500px;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-
-    h3 {
-      font-size: 30px;
+    .symbol {
+      color: white;
     }
 
+    p {
+      @include neongreen(background-color);
+    }
   }
 
-  .image-container {
-    max-width: 494px;
+  .serv-head {
+    @include headers;
   }
-}
+
+  .case-head {
+    @include headers;
+
+  }
+
+  .proposal {
+    background: rgba(243, 243, 243, 1) no-repeat right / auto;
+    height: 347px;
+    margin: 123px auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px;
+
+
+    .text-container {
+      max-width: 500px;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 18px;
+
+      h3 {
+        font-size: 30px;
+      }
+
+    }
+
+    .image-container {
+      max-width: 494px;
+    }
+  }
