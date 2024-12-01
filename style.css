@@ -323,6 +323,7 @@ a {
 }
 .content p {
   background-color: white;
+  background-clip: content-box;
 }
 
 .tracking {
@@ -391,6 +392,15 @@ a {
   text-align: left;
 }
 
+.process-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
+}
+
 .proposal {
   background: rgb(243, 243, 243) no-repeat right/auto;
   height: 347px;
@@ -413,4 +423,42 @@ a {
 }
 .proposal .image-container {
   max-width: 494px;
+}
+
+.case-link {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(25, 26, 35);
+  color: white;
+  border-radius: 45px;
+  font-size: 20px;
+}
+.case-link div {
+  border-right: solid white;
+  padding: 65px;
+  text-align: left;
+}
+.case-link div img {
+  padding-top: 20px;
+}
+
+.consultation {
+  background-color: rgb(185, 255, 102);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.consultation h3 {
+  border-bottom: solid black;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.consultation span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
 }/*# sourceMappingURL=style.css.map */
