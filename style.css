@@ -440,6 +440,23 @@ a {
 }
 .case-link div img {
   padding-top: 20px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.case-link div img:hover {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    padding-left: 5px;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .consultation {
