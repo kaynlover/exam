@@ -23,6 +23,15 @@
   #{$property}: rgba(255, 255, 255, 1);
 }
 
+
+@mixin headers {
+    display: flex;
+    gap: 40px;
+    margin-top: 250px;
+    margin-bottom: 80px;
+    width: 730px;
+    text-align: left;
+}
 @mixin cardStyles {
 
   display: grid;
@@ -70,5 +79,6 @@
     color: black;
     border-radius: 7px;
     margin: 0;
+  
   }
 }

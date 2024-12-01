@@ -233,6 +233,7 @@ a {
 }
 .sm-marketing p {
   background-color: white;
+  box-sizing: content-box;
 }
 
 .email-marketing {
@@ -379,6 +380,16 @@ a {
   margin-top: 250px;
   margin-bottom: 80px;
   width: 730px;
+  text-align: left;
+}
+
+.case-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
 }
 
 .proposal {

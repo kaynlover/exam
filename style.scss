@@ -1,3 +1,4 @@
+
 @mixin leftdiv($height, $width, $fontSize) {
   display: flex;
   height: $height;
@@ -23,6 +24,15 @@
   #{$property}: rgba(255, 255, 255, 1);
 }
 
+
+@mixin headers {
+    display: flex;
+    gap: 40px;
+    margin-top: 250px;
+    margin-bottom: 80px;
+    width: 730px;
+    text-align: left;
+}
 @mixin cardStyles {
 
   display: grid;
@@ -70,6 +80,7 @@
     color: black;
     border-radius: 7px;
     margin: 0;
+  
   }
 }
 
@@ -202,11 +213,12 @@ a {
 
   .symbol {
     color: white;
+  
   }
 
   p {
     background-color: white;
-  }
+    
 }
 
 .email-marketing {
@@ -241,11 +253,11 @@ a {
 }
 
 .serv-head {
-  display: flex;
-  gap: 40px;
-  margin-top: 250px;
-  margin-bottom: 80px;
-  width: 730px;
+ @include headers;
+}
+.case-head {
+  @include headers;
+  
 }
 
 .proposal {
