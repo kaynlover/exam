@@ -377,28 +377,45 @@ a {
 .serv-head {
   display: flex;
   gap: 40px;
-  margin-top: 250px;
+  margin-top: 140px;
   margin-bottom: 80px;
   width: 730px;
   text-align: left;
+  font-size: 18px;
+  align-items: center;
 }
 
 .case-head {
   display: flex;
   gap: 40px;
-  margin-top: 250px;
+  margin-top: 140px;
   margin-bottom: 80px;
   width: 730px;
   text-align: left;
+  font-size: 18px;
+  align-items: center;
 }
 
 .process-head {
   display: flex;
   gap: 40px;
-  margin-top: 250px;
+  margin-top: 140px;
   margin-bottom: 80px;
   width: 730px;
   text-align: left;
+  font-size: 18px;
+  align-items: center;
+}
+
+.team-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
+  font-size: 18px;
+  align-items: center;
 }
 
 .proposal {
@@ -459,22 +476,187 @@ a {
   }
 }
 
+.working-process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .consultation {
   background-color: rgb(185, 255, 102);
   border: solid black 1px;
   border-bottom: 5px solid black;
   border-radius: 45px;
+  height: 279px;
+  width: 100%;
   text-align: left;
-  padding: 60px;
+  padding: 20px 60px;
   box-sizing: border-box;
   font-size: 18px;
 }
 .consultation h3 {
-  border-bottom: solid black;
+  border-bottom: solid black 1px;
   font-size: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.consultation p {
+  padding-top: 30px;
+  margin: 0;
 }
 .consultation span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}
+
+.research {
+  height: 159px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.research h3 {
+  border-bottom: solid black 1px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.research p {
+  padding-top: 30px;
+  margin: 0;
+}
+.research span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}
+
+.implementation {
+  height: 159px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.implementation h3 {
+  border-bottom: solid black 1px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.implementation p {
+  padding-top: 30px;
+  margin: 0;
+}
+.implementation span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}
+
+.monitoring {
+  height: 159px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.monitoring h3 {
+  border-bottom: solid black 1px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.monitoring p {
+  padding-top: 30px;
+  margin: 0;
+}
+.monitoring span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}
+
+.reporting {
+  height: 159px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.reporting h3 {
+  border-bottom: solid black 1px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.reporting p {
+  padding-top: 30px;
+  margin: 0;
+}
+.reporting span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}
+
+.improvement {
+  height: 159px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.improvement h3 {
+  border-bottom: solid black 1px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: 0;
+}
+.improvement p {
+  padding-top: 30px;
+  margin: 0;
+}
+.improvement span {
   font-size: 60px;
   font-weight: 500px;
   padding-right: 20px;

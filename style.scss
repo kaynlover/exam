@@ -184,6 +184,10 @@ a {
   @include headers;
 }
 
+.team-head {
+  @include headers;
+}
+
 .proposal {
   background: rgba(243, 243, 243, 1) no-repeat right / auto;
   height: 347px;
@@ -254,21 +258,38 @@ a {
     }
   }
 }
+.working-process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .consultation {
   @include neongreen(background-color);
   border: solid black 1px;
   border-bottom: 5px solid black;
   border-radius: 45px;
+  height: 279px;
+  width: 100%;
   text-align: left;
-  padding: 60px;
+  padding: 20px 60px;
   box-sizing: border-box;
   font-size: 18px;
 
   h3 {
-    border-bottom: solid black;
+    border-bottom: solid black 1px;
     font-size: 30px;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0;
+
+
+  }
+
+  p {
+    padding-top: 30px;
+    margin: 0;
   }
 
   span {
@@ -276,4 +297,19 @@ a {
     font-weight: 500px;
     padding-right: 20px;
   }
+}
+
+.research {
+@include process;}
+.implementation {
+  @include process;
+}
+.monitoring {
+  @include process;
+}
+.reporting {
+  @include process;
+}
+.improvement {
+  @include process;
 }
