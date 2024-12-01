@@ -1,0 +1,481 @@
+body {
+  font-family: Space Grotesk;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 100px;
+  text-align: center;
+  width: 1240px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header a {
+  color: black;
+  border: solid transparent;
+  border-radius: 14px;
+  transition: padding 0.3s ease, border 0.3s ease;
+  padding: 10px 10px;
+}
+header a:hover {
+  border: solid black;
+  border-radius: 14px;
+  padding: 20px 35px;
+  transition: padding 0.3s ease;
+}
+
+.mainpage {
+  text-align: left;
+  height: 550px;
+  background: no-repeat right/auto url(svg/megaphone.svg);
+}
+.mainpage .maintext {
+  display: flex;
+  height: 481px;
+  flex-wrap: wrap;
+  width: 531px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.partners ul {
+  margin: 120px auto;
+  display: flex;
+  gap: 96px;
+  padding: 0;
+}
+
+ul li img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+ul li img:hover {
+  filter: grayscale(0%);
+}
+
+.button {
+  background-color: rgb(25, 26, 35);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 14px;
+  max-width: 264px;
+  max-height: 68px;
+  padding: 20px 35px;
+}
+.button:hover {
+  background-color: rgb(185, 255, 102);
+  color: black;
+  border-color: rgb(25, 26, 35);
+  border: 1px solid;
+  transition: all 0.3s ease;
+  font-weight: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.optimization {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(243, 243, 243);
+}
+.optimization .picture {
+  grid-area: pic;
+}
+.optimization .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.optimization .symbol img {
+  transition: transform 0.3s ease;
+}
+.optimization .symbol img:hover {
+  transform: rotate(25deg);
+}
+.optimization .block-text {
+  grid-area: text;
+}
+.optimization p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.optimization p {
+  background-color: rgb(185, 255, 102);
+}
+
+.ppclick {
+  background-color: rgb(185, 255, 102);
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+}
+.ppclick .picture {
+  grid-area: pic;
+}
+.ppclick .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.ppclick .symbol img {
+  transition: transform 0.3s ease;
+}
+.ppclick .symbol img:hover {
+  transform: rotate(25deg);
+}
+.ppclick .block-text {
+  grid-area: text;
+}
+.ppclick p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.ppclick p {
+  background-color: white;
+}
+
+.sm-marketing {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(25, 26, 35);
+}
+.sm-marketing .picture {
+  grid-area: pic;
+}
+.sm-marketing .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sm-marketing .symbol img {
+  transition: transform 0.3s ease;
+}
+.sm-marketing .symbol img:hover {
+  transform: rotate(25deg);
+}
+.sm-marketing .block-text {
+  grid-area: text;
+}
+.sm-marketing p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.sm-marketing .symbol {
+  color: white;
+}
+.sm-marketing p {
+  background-color: white;
+}
+
+.email-marketing {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(243, 243, 243);
+}
+.email-marketing .picture {
+  grid-area: pic;
+}
+.email-marketing .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.email-marketing .symbol img {
+  transition: transform 0.3s ease;
+}
+.email-marketing .symbol img:hover {
+  transform: rotate(25deg);
+}
+.email-marketing .block-text {
+  grid-area: text;
+}
+.email-marketing p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.email-marketing p {
+  background-color: rgb(185, 255, 102);
+}
+
+.content {
+  background-color: rgb(185, 255, 102);
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+}
+.content .picture {
+  grid-area: pic;
+}
+.content .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.content .symbol img {
+  transition: transform 0.3s ease;
+}
+.content .symbol img:hover {
+  transform: rotate(25deg);
+}
+.content .block-text {
+  grid-area: text;
+}
+.content p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.content p {
+  background-color: white;
+  background-clip: content-box;
+}
+
+.tracking {
+  display: grid;
+  grid-template-areas: "text pic" "symbol pic";
+  width: 600px;
+  height: 310px;
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  color: black;
+  background-color: rgb(25, 26, 35);
+}
+.tracking .picture {
+  grid-area: pic;
+}
+.tracking .symbol {
+  grid-area: symbol;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.tracking .symbol img {
+  transition: transform 0.3s ease;
+}
+.tracking .symbol img:hover {
+  transform: rotate(25deg);
+}
+.tracking .block-text {
+  grid-area: text;
+}
+.tracking p {
+  width: 221px;
+  height: 76px;
+  color: black;
+  border-radius: 7px;
+  margin: 0;
+}
+.tracking .symbol {
+  color: white;
+}
+.tracking p {
+  background-color: rgb(185, 255, 102);
+}
+
+.serv-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
+}
+
+.case-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
+}
+
+.process-head {
+  display: flex;
+  gap: 40px;
+  margin-top: 250px;
+  margin-bottom: 80px;
+  width: 730px;
+  text-align: left;
+}
+
+.proposal {
+  background: rgb(243, 243, 243) no-repeat right/auto;
+  height: 347px;
+  margin: 123px auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 45px;
+}
+.proposal .text-container {
+  max-width: 500px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+.proposal .text-container h3 {
+  font-size: 30px;
+}
+.proposal .image-container {
+  max-width: 494px;
+}
+
+.case-link {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(25, 26, 35);
+  color: white;
+  border-radius: 45px;
+  font-size: 20px;
+}
+.case-link div {
+  border-right: solid white;
+  padding: 65px;
+  text-align: left;
+}
+.case-link div img {
+  padding-top: 20px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+.case-link div img:hover {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    padding-left: 5px;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.consultation {
+  background-color: rgb(185, 255, 102);
+  border: solid black 1px;
+  border-bottom: 5px solid black;
+  border-radius: 45px;
+  text-align: left;
+  padding: 60px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.consultation h3 {
+  border-bottom: solid black;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.consultation span {
+  font-size: 60px;
+  font-weight: 500px;
+  padding-right: 20px;
+}/*# sourceMappingURL=style.css.map */
